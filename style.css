@@ -6,7 +6,7 @@ html {
 }
 :root {
   --primary: #ff919a;
-  --primary-dark: #ffd39a;
+  --primary-dark: rgb(243, 199, 117);
   --primary-text: #5c5c61;
   --secondary-text: #1cb5db;
   --primary-bg: #ffffff;
@@ -14,7 +14,7 @@ html {
 
 [data-theme='dark'] {
   --primary: #c70039;
-  --primary-dark: #8f1c48;
+  --primary-dark: rgb(165, 31, 82);
   --primary-text: #faf0cf;
   --secondary-text: #ff6579;
   --primary-bg: #2c2c2e;
@@ -229,7 +229,14 @@ input:checked + .slider:before {
   font-weight: 600;
   color: var(--secondary-text);
 }
-
+.ninja {
+  z-index: -1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 40vw;
+  opacity: 0.5;
+}
 /* responsive design */
 @media (max-width: 600px) {
   .header {
